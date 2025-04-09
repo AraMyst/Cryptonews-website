@@ -6,6 +6,7 @@ body {
   padding: 0;
 }
 .navbar {
+  width: 100%;
   background-color: #b8b8b8;
   padding: 10px;
   text-align: center;
@@ -104,6 +105,13 @@ main {
   font-size: 14px;
   line-height: 1.4;
 }
+.news-article img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
 .about-us {
   text-align: center;
   padding: 20px 0;
@@ -160,12 +168,14 @@ main {
   justify-content: center;
   gap: 20px;
   margin-top: 40px;
+  flex-wrap: wrap;
 }
 .related-item {
   display: flex;
   align-items: center;
   gap: 10px;
   max-width: 300px;
+  flex: 1 1 300px;
 }
 .related-item img {
   width: 150px;
@@ -180,6 +190,7 @@ main {
   margin: 0;
 }
 footer {
+  width: 100%;
   background-color: #b8b8b8;
   text-align: center;
   padding: 10px;
@@ -189,4 +200,26 @@ footer p {
   margin: 0;
   color: #0a02ff;
   font-size: 14px;
+}
+@media (max-width: 600px) {
+  .navbar ul {
+    display: block;
+  }
+  .navbar ul li {
+    display: block;
+    margin: 5px 0;
+  }
+  main {
+    padding: 0 20px;
+  }
+  footer {
+    padding: 10px 20px;
+  }
+  .related-news {
+    flex-direction: column;
+    align-items: center;
+  }
+  .related-item {
+    max-width: 90%;
+  }
 }
