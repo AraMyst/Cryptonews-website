@@ -2,7 +2,7 @@
 
 A crypto news website built using **pure HTML** and **CSS**.
 
-🚀 Deployed on GitHub Pages: [Click here to view](https://exemple.com)
+🚀 Deployed on GitHub Pages: [Click here to view](https://aramyst.github.io/Cryptonews-website/)
 
 ---
 
